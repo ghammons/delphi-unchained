@@ -1,0 +1,36 @@
+IPFS set up
+
+### install ipfs on your local machine
+https://ipfs.io/docs/install/
+has all the info on how to do this on differernt machines
+
+### initialize node
+$ipfs init
+$ipfs cat <hash of your public key - given in the above step>
+
+### add files
+$ipfs add <filename>
+
+### viewing on local host
+$ipfs daemon
+
+on chrome: 
+http://localhost:8080/ipfs/<hash of image/file>
+https://gateway.ipfs.io/ipfs/<hash of image/file>
+
+
+### to view the ipfs web ui:
+http://127.0.0.1:5001/webui
+
+###using the api
+npm install --save ipfs-api
+npm install ipfs --global
+
+npm install ipfs async
+
+####
+If you're using the hash of a specific snapshot of content -- for example a file that someone added to IPFS, use a path that starts with /ipfs/. If you're using an IPNS hash to get the latest version of some content that gets updated over time, for example a website that gets fresh content every day, use a path that starts with /ipns/.
+
+####
+
+
